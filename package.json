@@ -12,6 +12,10 @@
 	},
 	"keywords": [
 		"node",
+		"es6",
+		"prmosie",
+		"async",
+		"await",
 		"task",
 		"parallel",
 		"queue",

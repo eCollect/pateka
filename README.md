@@ -1,3 +1,5 @@
+[![travis](https://travis-ci.com/eCollect/pateka.svg?branch=master)](https://travis-ci.com/eCollect/pateka) [![npm version](https://badge.fury.io/js/pateka.svg)](https://www.npmjs.com/package/pateka)
+
 # pateka
 
 Ordered parallel asynchronous tasks.
