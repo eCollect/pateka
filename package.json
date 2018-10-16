@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/eCollect/pateka"
+		"url": "git://github.com/eCollect/pateka"
 	},
 	"scripts": {
     "test": "mocha ./tests/unit"
