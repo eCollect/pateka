@@ -1,37 +1,40 @@
 {
-  "name": "pateka",
-  "version": "0.1.0",
-  "description": "Ordered parallel asynchronous tasks.",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/eCollect/pateka"
-	},
-	"scripts": {
-    "test": "mocha ./tests/unit"
-	},
-	"keywords": [
-		"node",
-		"es6",
-		"prmosie",
-		"async",
-		"await",
-		"task",
-		"parallel",
-		"queue",
-		"worker"
-	],
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "delay": "^4.1.0",
-    "eslint": "^5.7.0",
-    "eslint-config-ecollect-base": "0.0.2",
-    "eslint-plugin-import": "^2.14.0",
-    "mocha": "^5.2.0"
-  },
-  "author": "eCollect AG.",
-  "license": "MIT",
-  "dependencies": {
-    "p-queue": "^3.0.0"
-  }
+		"name": "pateka",
+		"version": "0.1.0",
+		"description": "Ordered parallel asynchronous tasks.",
+		"main": "index.js",
+		"repository": {
+				"type": "git",
+				"url": "git://github.com/eCollect/pateka"
+		},
+		"scripts": {
+				"test": "nyc mocha ./tests/unit",
+				"coverage": "nyc report --reporter=text-lcov | coveralls"
+		},
+		"keywords": [
+				"node",
+				"es6",
+				"prmosie",
+				"async",
+				"await",
+				"task",
+				"parallel",
+				"queue",
+				"worker"
+		],
+		"devDependencies": {
+				"chai": "^4.2.0",
+				"coveralls": "^3.0.2",
+				"delay": "^4.1.0",
+				"eslint": "^5.7.0",
+				"eslint-config-ecollect-base": "0.0.2",
+				"eslint-plugin-import": "^2.14.0",
+				"mocha": "^5.2.0",
+				"nyc": "^13.1.0"
+		},
+		"author": "eCollect AG.",
+		"license": "MIT",
+		"dependencies": {
+				"p-queue": "^3.0.0"
+		}
 }

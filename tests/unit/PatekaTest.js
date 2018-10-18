@@ -19,6 +19,14 @@ describe('Pateka', () => {
 		pateka.add.should.be.a('function');
 	});
 
+	it('should throw with missing options', () => {
+		const pateka = new Pateka();
+		assert.rejects(() => pateka.add()); // all
+		assert.rejects(() => pateka.add({ routingKey: '2' })); // id
+		assert.rejects(() => pateka.add({ routingKey: '2', id: 'order-123' })); // task
+		assert.rejects(() => pateka.add({ routingKey: '2', id: 'order-123', task: 'not a function' })); // task is not a function
+	});
+
 	it('should initilize with defualt options', () => {
 		const pateka = new Pateka();
 		pateka.tracks.length.should.equal(256);
@@ -31,10 +39,14 @@ describe('Pateka', () => {
 		pateka.tracks.forEach(track => track.queue._concurrency.should.equal(5));
 	});
 
-	describe('findBestTrackForRoutingKey', () => {
+	describe('_findBestTrackForRoutingKey', () => {
 		let pateka;
 		beforeEach(() => {
 			pateka = new Pateka();
+		});
+
+		it('should throw for missing routingKey', () => {
+			assert.throws(() => pateka._findBestTrackForRoutingKey());
 		});
 
 		it('should return first empty track when empty', () => {
