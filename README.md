@@ -1,4 +1,4 @@
-[![travis](https://travis-ci.com/eCollect/pateka.svg?branch=master)](https://travis-ci.com/eCollect/pateka) [![npm version](https://badge.fury.io/js/pateka.svg)](https://www.npmjs.com/package/pateka) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](LICENSE)
+[![travis](https://travis-ci.com/eCollect/pateka.svg?branch=master)](https://travis-ci.com/eCollect/pateka) [![npm version](https://badge.fury.io/js/pateka.svg)](https://www.npmjs.com/package/pateka) [![Coverage Status](https://coveralls.io/repos/github/eCollect/pateka/badge.svg?branch=master)](https://coveralls.io/github/eCollect/pateka?branch=master) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](LICENSE)
 
 # pateka
 

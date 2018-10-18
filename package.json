@@ -11,7 +11,6 @@
 				"test": "nyc mocha ./tests/unit",
 				"coverage": "nyc report --reporter=text-lcov | coveralls"
 		},
-
 		"keywords": [
 				"node",
 				"es6",
