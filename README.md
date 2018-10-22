@@ -1,8 +1,10 @@
+<p align="center">
+	<img src="img/pateka.png" width="200px" height="auto"/>
+</p>
+
+<h1 align="center">pateka - Ordered parallel asynchronous tasks.</h1>
+
 [![travis](https://travis-ci.com/eCollect/pateka.svg?branch=master)](https://travis-ci.com/eCollect/pateka) [![npm version](https://badge.fury.io/js/pateka.svg)](https://www.npmjs.com/package/pateka) [![Coverage Status](https://coveralls.io/repos/github/eCollect/pateka/badge.svg?branch=master)](https://coveralls.io/github/eCollect/pateka?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/eCollect/pateka/badge.svg?targetFile=package.json)](https://snyk.io/test/github/eCollect/pateka?targetFile=package.json) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](LICENSE)
-
-# pateka
-
-Ordered parallel asynchronous tasks.
 
 
 ## Installation
