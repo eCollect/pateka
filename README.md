@@ -15,7 +15,7 @@ $ npm install pateka
 ## Usage
 
 
-Creating a new pateka dispatcher. By default a pateka will be created with 256 tracks, each track than will be filled with async tasks based on their routing key, and be run in order. Tracks will be run in parallel.
+Creating a new pateka. By default a pateka will be created with (parallel) 256 tracks, each track than will be filled with async tasks based on their routing key. Tasks in the same track ( same routing key ) will be run in order, tracks will be run in parallel.
 
 ```javascript
 const Pateka = require('pateka');
