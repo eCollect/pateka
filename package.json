@@ -1,6 +1,6 @@
 {
 		"name": "pateka",
-		"version": "0.1.11",
+		"version": "0.1.12",
 		"description": "Ordered parallel asynchronous tasks.",
 		"main": "index.js",
 		"repository": {
